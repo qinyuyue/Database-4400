@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--The <!DOCTYPE> declaration is not case sensitive.-->
+<html lang="en">
+<html>
+<head>
+  <!--meta info about this page-->
+  <title>Atlanta Gardens, Farms and Orchards system</title>
+</head>
+<!--<body style="background-color:MediumSeaGreen;">-->
+<style>
+body, html{
+    height: 100%;
+    width: 100%;
+    background-image: url("./pea.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-content {
+    text-align: left;
+}
+.header-right{
+    background-color: rgba(32, 46, 69, 0.4);
+    border: 1px solid #4b5263;
+    padding: 50px;
+}
+.col{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.button{
+    background-color: tomato;
+    color: white;
+}
+</style>
+
+<body>
+Hello, today is <?php echo date('l, F jS, Y'); ?>.
+<?php echo "hello world!";?>
+  <br> <!--empty element-->
+  <h1 style="color:white;">Atlanta Gardens, Farms and Orchards</h1>
+  <br>
+  <p title="If you already have an account">
+  <button class="button">Log in</button>
+  </p><button class="button">Sign up</button>
+  <div class="banner-content col-lg-7 col-md-6 ">
+							<h1 class="text-white text-uppercase">
+								Atlanta Farm, Gardens and Orchards
+							</h1>
+							<p class="pt-20 pb-20 text-white">
+								Search farm system in Atlanta!
+							</p>
+						</div>
+  <div class="header-right col">
+      <h4 class="text-white pb-30">New Visitor Registration</h4>
+      <form class="form" role="form" autocomplete="off">
+          <div class="from-group">
+            <input class="form-control txt-field" type="email" name="email" placeholder="Email address*">
+            <input class="form-control txt-field" type="text" name="name" placeholder="Username*">
+            <input class="form-control txt-field" type="password" name="password" placeholder="Password*">
+            <input class="form-control txt-field" type="password" name="password" placeholder="Confirm password*">
+          </div>
+          <div class="form-group row">
+              <div class="col-md-12">
+                  <button type="reset" class="btn btn-default btn-lg btn-block text-center text-uppercase">Register</button>
+              </div>
+              <br>
+              <br>
+              <div class="col-md-12">
+                  <button type="reset" class="btn btn-default btn-lg btn-block text-center text-uppercase">Cancel</button>
+              </div>
+          </div>
+      </form>
+    </div>
+</body>
+</html>
