@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>Approved Animals/Crops</h1>
+<!--table start-->
+<div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+    </tr>
+  </table>
+</div>
+<!--table finish-->
+
+<!--buttons start-->
+<!--!!!!!How to select one property?-->
+<div>
+  <div>
+    <select>
+      <option value="" disabled selected hidden>Type..</option>
+      <option value="1">Animal</option>
+      <option value="1">Fruits</option>
+      <option value="1">Nuts</option>
+      <option value="1">Vegetables</option>
+      <option value="1">Flowers</option>
+    </select>
+  </div>
+  <div>
+    <form class="example" action="/action_page.php" style="max-width:300px">
+    <input type="text" placeholder="Name.." name="animalcrop">
+    <button type="submit">Add to Approved List</button>
+  </div>
+
+  <div>
+    <select>
+      <option value="" disabled selected hidden>Search by..</option>
+      <option value="1">Name</option>
+      <option value="1">Type</option>
+    </select>
+  </div>
+
+  <div>
+    <form class="example" action="/action_page.php" style="max-width:300px">
+    <input type="text" placeholder="Search.." name="search2">
+    <button type="submit">Search Visitors</button>
+  </div>
+
+  <!-- !!!!!!function of buttons has not been done yet-->
+  <div>
+    <button type="submit">Delete Selection</button>
+  </div>
+
+  <div>
+    <button type="submit">Back</button>
+  </div>
+
+  <!--button finish-->
+</form>
+
+</body>
+</html>

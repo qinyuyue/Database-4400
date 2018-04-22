@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>All Visitors in System</h1>
+<!--table start-->
+<div>
+  <table>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Logged Visits</th>
+    </tr>
+  </table>
+</div>
+<!--table finish-->
+
+<!--buttons start-->
+<!--!!!!!How to select one property?-->
+<div>
+  <div>
+    <select>
+      <option value="" disabled selected hidden>Search by..</option>
+      <option value="1">Username</option>
+      <option value="1">Email</option>
+      <option value="1">Logged Visits</option>
+    </select>
+  </div>
+
+  <div>
+    <form class="example" action="/action_page.php" style="max-width:300px">
+    <input type="text" placeholder="Search.." name="search2">
+    <button type="submit">Search Visitors</button>
+  </div>
+
+  <!-- !!!!!!function of buttons has not been done yet-->
+  <div>
+    <button type="submit">Delete Visitor Account</button>
+  </div>
+
+  <div>
+    <button type="submit">Delete Log History</button>
+  </div>
+
+  <div>
+    <button type="submit">Back</button>
+  </div>
+
+  <!--button finish-->
+</form>
+
+</body>
+</html>
