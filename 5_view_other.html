@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+
+</style>
+</head>
+<body>
+
+<h3>All Other Valid Properties</h3>
+<!--table start-->
+<div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>Zip</th>
+      <th>Size</th>
+      <th>Type</th>
+      <th>Public</th>
+      <th>Commercial</th>
+      <th>ID</th>
+      <th>IsValid</th>
+      <th>Visits</th>
+      <th>Avg Rating</th>
+    </tr>
+  </table>
+</div>
+<!--table finish-->
+
+<!--buttons start-->
+<div>
+  <div>
+    <select>
+      <option value="" disabled selected hidden>Select..</option>
+      <option value="1">Name</option>
+      <option value="1">City</option>
+      <option value="1">Type</option>
+      <option value="1">Visits</option>
+      <option value="1">Avg Rating</option>
+    </select>
+  </div>
+
+  <div>
+    <form class="example" action="/action_page.php" style="max-width:300px">
+    <input type="text" placeholder="Search.." name="search2">
+    <button type="submit">Search Property</button>
+  </div>
+
+  <!-- !!!!!!function of buttons has not been done yet-->
+  <div>
+    <button type="submit">View Property Details</button>
+  </div>
+
+  <div>
+    <button type="submit">Back</button>
+  </div>
+
+  <!--button finish-->
+</form>
+
+</body>
+</html>
